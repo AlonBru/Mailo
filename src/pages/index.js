@@ -1,6 +1,0 @@
-export {default as Mail} from './Mail'
-export {default as ComposeMail} from './ComposeMail'
-export {default as MailList} from './MailList'
-export {default as OutgoingMailList} from './OutgoingMail'
-export {default as SentMail} from './SentMail'
-export {default as Drafts} from './Drafts'
