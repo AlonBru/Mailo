@@ -1,13 +1,13 @@
 {
   "name": "mailapp",
   "version": "0.1.0",
+  "homepage": "https://alonbru.github.io/Mailo/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "faker": "^5.1.0",
-    "framer-motion": "^3.1.1",
     "node-sass": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -28,6 +28,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "genMails": "node src/genMail",
     "build": "react-scripts build",
@@ -51,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
