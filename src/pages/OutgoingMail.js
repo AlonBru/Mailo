@@ -6,7 +6,6 @@ import ToolBar from '../components/Toolbar'
 
 function OutgoingMailList() {
   const {sent} = useContext(MailContext)
-  // const [mails,setMails] = useState(Object.keys(sent).map(id=>sent[id]))
   const mails= Object.keys(sent).map(id=>sent[id]).filter(mail=>!mail.draft)
 
   return (<>

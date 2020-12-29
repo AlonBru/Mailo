@@ -1,12 +1,11 @@
 import React,{useContext} from 'react' 
-import {useParams,useHistory} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import {MailContext} from '../App'
 import Toolbar from '../components/Toolbar'
 import './stylesheets/SinglePage.scss'
 function Mail() {
   const {id} = useParams()
   const sent = useContext(MailContext).sent[id]
-  const history = useHistory()
   
   console.log(id)
   console.log(sent)

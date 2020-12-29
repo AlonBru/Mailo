@@ -29,7 +29,6 @@
   }
   &:hover{
     cursor: pointer;
-    // background-color: #444;
     background-image: linear-gradient(to right,#666,#555,#333);
     & .buttons{
       opacity:1;
@@ -70,9 +69,6 @@
     line-height:3em;
     text-align:center;
     border-radius:50% 50% 15% 50%/ 50% 50% 15% 50% ;
-    // border:rgba(255,255,255,.5)  5px;
-    // border-style: solid;
-    // border-radius:50%  ;
     background:orangered;
     vertical-align:middle;
     color:white;
@@ -91,23 +87,16 @@
     }
   }
   .read-button{
-    // position: absolute;
     transition: .4;
     right: 2%;
     height: 80%;
     top:10.5%;
   }
   .reply-button{
-    // position: absolute;
     transition: .4;
     right: 15%;
     height: 80%;
     top:10.5%;
-    &:hover{
-      // right: 14.5%;
-      // top:8.5%;
-      // height: 85%;
-    }
   }
   
   

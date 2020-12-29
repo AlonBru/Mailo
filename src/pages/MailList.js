@@ -6,7 +6,6 @@ import ToolBar from '../components/Toolbar'
 
 function MailList() {
   const {mails:allMails,setMails:setAllMails} = useContext(MailContext)
-  // const [mails,setMails] = useState(allMails||[])
   const mails =allMails||[]
   const [search,setSearch] = useState('')
   const unread = mails.filter(mail=>!mail.read)
