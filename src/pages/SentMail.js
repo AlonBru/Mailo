@@ -2,6 +2,7 @@ import React,{useContext} from 'react'
 import {useParams} from 'react-router-dom'
 import {MailContext} from '../App'
 import Toolbar from '../components/Toolbar'
+import NoMail from '../components/NoMail'
 import './stylesheets/SinglePage.scss'
 function Mail() {
   const {id} = useParams()
@@ -36,9 +37,7 @@ function Mail() {
     return   (<>
       <Toolbar>
       </Toolbar>
-      <main>
-      no mail with Id {id}
-    </main>
+      <NoMail text={`no mail found with Id ${id}`} />
     </>)
   }
 } 

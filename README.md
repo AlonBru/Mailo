@@ -1,7 +1,8 @@
 # ✉ Mailo
-see it [deployed](https://alonbru.github.io/Mailo/)  
-a sample mail app.  
-**stack**: ReactJS with mock data.
+a sample mail inbox site. See the mails you received and Send messages.
+Try it [live](https://alonbru.github.io/Mailo/) (with Mock Data)
+
+**Stack**: ReactJS.
 ![mail app main page](mainpage.png)
 ## features:
 - pure (S)CSS! no premade components were used,hardly any packages.

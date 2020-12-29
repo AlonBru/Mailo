@@ -24,7 +24,7 @@ function MailListItem({mail:{from:{mail,name},subject,id,text,date,read},changeR
       if(!read){ 
        changeRead(id,read)
       }
-      history.push(`mail/${id}`)
+      history.push(`/mail/${id}`)
     }}
   >
     <span className="icon">{initials}</span>

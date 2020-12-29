@@ -16,15 +16,13 @@ function MailList() {
     thisMail.read = !read
     setAllMails(newMails)
   }
-  const regex = new RegExp('.*'+search+'.*','i')
-  console.log(regex);
   const mailsToDisplay = mails.length&&mails
   .filter( ({
     from:{ name:sender },
      subject,
       content
     } )=>{
-      const regex = new RegExp('.*'+search+'.*')
+      const regex = new RegExp('.*'+search+'.*','i')
     return (
       sender.match(regex) ||
       content.match(regex) ||
@@ -50,10 +48,10 @@ function MailList() {
     />
   </ToolBar>
   <main>
-    <content>
-      {mailsToDisplay
+    <content className="contents">
+      {mailsToDisplay.length
       ? mailsToDisplay
-      :<p> no mails found</p> }
+      :<h2> no mails found</h2> }
     </content>
   </main>
   </>)

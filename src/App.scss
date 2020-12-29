@@ -4,31 +4,36 @@
   "toolbar toolbar"
   "nav main"
   ;
-  grid-template-columns: 1fr 3fr ;
+  grid-template-columns: minmax(100px, 180px) 3fr ;
   grid-template-rows: 5fr 95fr ;
   height:100vh;
   color:#eee;
+  overflow: hidden;
 }
 nav {
   grid-area: nav;
-  background-image: linear-gradient( -30deg, #111, #555) ;
   min-width: 100px;
+  max-width: 180px;
   height:100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
+  position: relative;
+  background-image: linear-gradient( -30deg, #111, #555) ;
   & a{
     transition: .2s;
     padding: 0.5em ;
     text-decoration: none;
     font-size:large;
     height:auto;
-    min-height:25%;
+    min-height:22%;
     color:#eee;
+    // background: royalblue;
     display: flex;
     align-items: center;
     border-left:  blue 0px solid;
+    background: rgba(0,0,0,.2);
     &:hover{
       background: rgba(0,0,0,.3);
     }
@@ -40,9 +45,13 @@ nav {
   }
 }
 main{
+  padding:2%;
   grid-area: main;
-  width:100%;
-  height: 100%;
+  height: 98%;
+  width:96%;
+  height: 98%;
+
+  overflow-y:scroll;
   overflow-y:scroll;
   background-color: #222;
   &::-webkit-scrollbar {
@@ -50,6 +59,12 @@ main{
   } 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+.noFound{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
   
 }
 .toolbar{
@@ -60,7 +75,7 @@ main{
   display: flex;
   justify-content: space-between;
   p{
-    font-size: xx-large;
+    font-size: 5vh;
     font-weight:700;
     width: fit-content;
     margin:auto 0;
@@ -75,14 +90,22 @@ main{
       height:2em;
     }
     input{
+      transition:.5s;
       outline:none;
       height:2em;
       padding: 0 1em ;
       border-radius:1em/.9em;
-      color:#eee;
+      color:#444;
       border:none;
-      border-bottom: solid 1px #111;
-      background-color: #333;
+      border-bottom: solid 1px rgba(50,50,50,.8);
+      background-color: rgba(100,100,100,.3);
+      &:hover{
+        background-color: rgba(200,200,200,.3);
+        color:#eee;
+      }
+      &::placeholder{
+        color: #333;
+      }
     }
     & *{
       margin-left:1em;

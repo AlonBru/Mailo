@@ -4,6 +4,7 @@ import './App.scss';
 import { BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from 'react-router-dom'
 import {
   MailList,
@@ -48,8 +49,11 @@ function App() {
           <Route path='/compose'>
             <ComposeMail/>
           </Route>
-          <Route path='/' >
+          <Route path='/all' >
             <MailList/>
+          </Route>
+          <Route path='/*'>
+            <Redirect to="/all" />
           </Route>
         </Switch>
       </Router>

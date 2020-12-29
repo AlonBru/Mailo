@@ -15,14 +15,14 @@ function Nav() {
         activeClassName="active"
       >
         <span>
-        Incoming Mail
+        Inbox
         </span>
       </NavLink>
       <NavLink to='/sent'
         activeClassName="active"
       >
         <span>
-        Outgoing Mail
+        Sent
         </span>
       </NavLink>
       <NavLink to='/drafts'

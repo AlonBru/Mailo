@@ -2,15 +2,16 @@ import React, {useContext} from 'react'
 import './stylesheets/mail-list.scss'
 import {MailContext} from '../App'
 import MailListItem from '../components/OutgoingListItem'
-import ToolBar from '../components/Toolbar'
+import Toolbar from '../components/Toolbar'
+import NoMail from '../components/NoMail'
 
 function OutgoingMailList() {
   const {sent} = useContext(MailContext)
   const mails = Object.keys(sent).map(id=>sent[id]).filter(mail=>mail.draft)
 
   return (<>
-  <ToolBar>
-  </ToolBar>
+  <Toolbar>
+  </Toolbar>
   <main>
     <content>
       {mails.length
@@ -18,7 +19,8 @@ function OutgoingMailList() {
         <MailListItem key={mail.id} mail={mail} />
         
       ))
-      :<p> no Drafts saved</p> }
+      :<NoMail text='no Drafts saved'/> 
+      }
     </content>
   </main>
   </>)
