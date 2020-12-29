@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react'
+import React, {useContext} from 'react'
 import './stylesheets/mail-list.scss'
 import {MailContext} from '../App'
 import MailListItem from '../components/OutgoingListItem'
@@ -6,7 +6,8 @@ import ToolBar from '../components/Toolbar'
 
 function OutgoingMailList() {
   const {sent} = useContext(MailContext)
-  const [mails,setMails] = useState(Object.keys(sent).map(id=>sent[id]))
+  // const [mails,setMails] = useState(Object.keys(sent).map(id=>sent[id]))
+  const mails= Object.keys(sent).map(id=>sent[id]).filter(mail=>!mail.draft)
 
   return (<>
   <ToolBar>

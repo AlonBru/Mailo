@@ -1,5 +1,5 @@
 import React,{memo} from 'react' 
-import {Link,useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 function OutgoingListItem({mail:{to:mail,subject,id,content,date,draft}}) {
   const history = useHistory()

@@ -1,5 +1,5 @@
 import React,{memo} from 'react' 
-import {Link,useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import Read from './svgs/read.svg'
 import Unread from './svgs/unread.svg'
 import Reply from './svgs/reply.svg'
