@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Mailo/static/css/main.6c3978eb.chunk.css",
-    "main.js": "/Mailo/static/js/main.803e5318.chunk.js",
-    "main.js.map": "/Mailo/static/js/main.803e5318.chunk.js.map",
+    "main.js": "/Mailo/static/js/main.321bb6c9.chunk.js",
+    "main.js.map": "/Mailo/static/js/main.321bb6c9.chunk.js.map",
     "runtime-main.js": "/Mailo/static/js/runtime-main.04d0a002.js",
     "runtime-main.js.map": "/Mailo/static/js/runtime-main.04d0a002.js.map",
     "static/js/2.d84303e1.chunk.js": "/Mailo/static/js/2.d84303e1.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.04d0a002.js",
     "static/js/2.d84303e1.chunk.js",
     "static/css/main.6c3978eb.chunk.css",
-    "static/js/main.803e5318.chunk.js"
+    "static/js/main.321bb6c9.chunk.js"
   ]
 }
