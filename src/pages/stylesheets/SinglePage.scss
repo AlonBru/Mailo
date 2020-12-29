@@ -14,12 +14,17 @@ content.mail {
   }
   & span{
     max-width:100%;
-    border-bottom:solid 1px black;
+    max-width: 100%;
+    padding: .2em 0;
+    border-bottom: 1px solid #777;
+  }
+  .subject{
+    font-size:xx-large ;
   }
   & textarea{
     border:none;
     grid-area: content;
-    
+    padding: .5em;
     outline: none;
     font-weight: 400
     !important

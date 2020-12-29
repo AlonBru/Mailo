@@ -89,10 +89,17 @@ main{
     width:100%;
     max-width: 70%;
     button{
-      color:#eee;
-      background-color: black;
+      transition: .1;
+      color: #eee;
+      background-color: #111;
       border-radius: 1vh;
-      height:2em;
+      height: 3em;
+      border: none;
+      padding: 1em;
+      &:hover{
+        background-color: #333;
+      }
+
     }
     input{
       transition:.5s;
@@ -122,4 +129,6 @@ main{
 
 button{
   cursor: pointer;
+  outline: none;
+
 }

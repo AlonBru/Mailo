@@ -122,6 +122,7 @@ function ComposeMail() {
       <label>
         To:
         <input name="to"
+        autoComplete='off'
         required
         type="email"
         value={to}
