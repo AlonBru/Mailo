@@ -43,7 +43,6 @@ function ComposeMail() {
   
   const [mail,setMail] = useState(getPrevMail())
 
-  console.log(id)
 
   const {id:mailId,to,subject,content} = mail
 
@@ -80,7 +79,6 @@ function ComposeMail() {
       mail.id = newId
       newSent[newId] = mail
     }
-    console.log(mail)
     setSent(newSent)
     history.push(`/drafts`)
   }
@@ -92,16 +90,12 @@ function ComposeMail() {
     newMail[name] = value
     setMail(newMail)
   }
-  console.log(ref)
   
   return (<>
   <Toolbar >
   <button name="send" 
     type="submit"
-    onClick={(e)=>{
-      console.log(mail)
-      send(e)
-    }}
+    onClick={send}
   >
     SEND
   </button>

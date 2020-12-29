@@ -6,7 +6,6 @@ import './stylesheets/SinglePage.scss'
 function Mail() {
   const {id} = useParams()
   const mail = useContext(MailContext).mailIndex[id]
-  console.log(mail)
   const {from:{name,mail:email},subject,content,date} = mail
   const history = useHistory()
   return (<>

@@ -7,8 +7,6 @@ function Mail() {
   const {id} = useParams()
   const sent = useContext(MailContext).sent[id]
   
-  console.log(id)
-  console.log(sent)
   if(sent){
     const {to:mail,subject,content,date} = sent
     return (<>
