@@ -22,7 +22,7 @@ nav {
   position: relative;
   background-image: linear-gradient( -30deg, #111, #555) ;
   & a{
-    transition: .2s;
+    // transition: .1s;
     padding: 0.5em ;
     text-decoration: none;
     font-size:large;
@@ -40,7 +40,7 @@ nav {
   }
   .active{
     border-left:  rgb(255, 90, 0) 2% solid;
-    font-size:x-large;
+    & span{font-size:x-large;}
     color: rgb(255, 90, 0);
   }
 }
@@ -80,9 +80,14 @@ main{
     width: fit-content;
     margin:auto 0;
   }
-  span{
+  &>span{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    height:8vh;
+    align-items: center;
+    width:100%;
+    max-width: 70%;
     button{
       color:#eee;
       background-color: black;
@@ -91,24 +96,25 @@ main{
     }
     input{
       transition:.5s;
+      width:50%;
       outline:none;
-      height:2em;
-      padding: 0 1em ;
-      border-radius:1em/.9em;
+      height:3em;
+      padding: 0 1.5em ;
+      border-radius:1.5em/1.5em;
       color:#444;
       border:none;
       border-bottom: solid 1px rgba(50,50,50,.8);
-      background-color: rgba(100,100,100,.3);
-      &:hover{
-        background-color: rgba(200,200,200,.3);
+      background-color: rgba(200,200,200,.3);
+      font-size: medium;
+      &:hover,&:focus{
+        background-color: rgba(200,200,200,.7);
+        // height:2.5em;
         color:#eee;
       }
       &::placeholder{
         color: #333;
+        font-size: large;
       }
-    }
-    & *{
-      margin-left:1em;
     }
   }
   background-image:linear-gradient(58deg, #375, #ff5a00);

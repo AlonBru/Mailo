@@ -2,7 +2,8 @@ import React, {useState,useContext} from 'react'
 import './stylesheets/mail-list.scss'
 import {MailContext} from '../App'
 import MailListItem from '../components/MailListItem'
-import ToolBar from '../components/Toolbar'
+import Toolbar from '../components/Toolbar'
+import NoMail from '../components/NoMail'
 
 function MailList() {
   const {mails:allMails,setMails:setAllMails} = useContext(MailContext)
@@ -35,8 +36,8 @@ function MailList() {
   ))
 
   return (<>
-  <ToolBar>
-    <span>
+  <Toolbar>
+    <span className='unread'>
       you have {unread.length} unread messages
     </span>
     <input className='search'
@@ -46,12 +47,12 @@ function MailList() {
         setSearch(e.target.value)
       }}
     />
-  </ToolBar>
+  </Toolbar>
   <main>
     <content className="contents">
       {mailsToDisplay.length
       ? mailsToDisplay
-      :<h2> no mails found</h2> }
+      :<NoMail text={"no Mails found"+(mails?` with search term ${search}`:'')}/>}
     </content>
   </main>
   </>)
