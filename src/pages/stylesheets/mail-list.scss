@@ -1,0 +1,122 @@
+.mail-list{
+  transition:.9s;
+  position: relative;
+  background:#333;
+  background-image: linear-gradient(to right, #333);
+  text-decoration: none;
+  border-top:#555 solid .1px;
+  display: flex;
+  color:#fff;
+  flex-direction: row;
+  height:5em;
+  padding: 0 2% ;
+  display:grid;
+  grid-template-areas:
+  "icon subject subject buttons"
+  "icon from    date    buttons" ;
+  grid-template-columns:3.5em 1fr .5fr 6em ;
+  grid-template-rows: 50% 50%;
+  font-weight: 300;
+  overflow: hidden;
+  *{
+    align-self: center;
+  }
+  & .subject {
+    font-weight: 600;
+  }
+  &.read *{
+    font-weight: 300;
+  }
+  &:hover{
+    cursor: pointer;
+    // background-color: #444;
+    background-image: linear-gradient(to right,#666,#555,#333);
+    & .buttons{
+      opacity:1;
+  
+    }
+  }
+
+  & .subject {
+    font-size:large;
+    overflow-y: hidden;
+    height:1.5em;
+    margin:0;
+    grid-area:subject;
+    &[long="long"]{
+      &::after{
+        content:'...'
+      }
+    }
+  }
+  & .from {
+    margin-top:auto;
+    margin-bottom:auto;
+    grid-area:from;
+  }
+  & .date {
+    margin-top:auto;
+    margin-bottom:auto;
+    grid-area:date;
+    justify-self: end;
+  }
+  & .icon {
+    grid-area:icon;
+    display:inline-block;
+    font-size:1em;
+    font-weight:800;
+    width:3em;
+    height:3em;
+    line-height:3em;
+    text-align:center;
+    border-radius:50% 50% 15% 50%/ 50% 50% 15% 50% ;
+    // border:rgba(255,255,255,.5)  5px;
+    // border-style: solid;
+    // border-radius:50%  ;
+    background:orangered;
+    vertical-align:middle;
+    color:white;
+  }
+  & .buttons{
+    opacity:0;
+    grid-area: buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    img{
+      height: 2.5em;
+      &:hover{
+        height: 3em;        
+      }
+    }
+  }
+  .read-button{
+    // position: absolute;
+    transition: .4;
+    right: 2%;
+    height: 80%;
+    top:10.5%;
+  }
+  .reply-button{
+    // position: absolute;
+    transition: .4;
+    right: 15%;
+    height: 80%;
+    top:10.5%;
+    &:hover{
+      // right: 14.5%;
+      // top:8.5%;
+      // height: 85%;
+    }
+  }
+  
+  
+  & > div {
+    height:0;
+    overflow: hidden;
+    transition: 2sec;
+    &.open{
+      height:100%;
+    }
+  }
+}

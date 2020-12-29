@@ -1,0 +1,34 @@
+content.mail {
+  display: flex;
+  flex-direction: column;
+  height:93%;
+  padding:3%;
+  & *{
+    font:inherit;
+    margin-top:.5%;
+  }
+  & input{
+    border:none;
+    border-bottom:solid 1px black;
+    width:90%
+  }
+  & span{
+    max-width:100%;
+    border-bottom:solid 1px black;
+  }
+  & textarea{
+    border:none;
+    grid-area: content;
+    
+    outline: none;
+    font-weight: 400
+    !important
+    ;
+    height:100%;
+    resize: none;
+    &:disabled{
+      background-color: #222;
+      color: #ddd;
+    }
+  }
+}

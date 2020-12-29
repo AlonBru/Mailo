@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+  height:93%;
+  margin:3%;
+  border: solid 3px #111;
+  overflow-x: hidden;
+  // width: 93%;
+  & *{
+    font:inherit;
+    margin-top:.5%;
+  }
+  & input{
+    border:none;
+    border-bottom:solid 1px #ddd;
+    width:100%;
+    background-color: #111;
+    color: #ddd;
+  }
+  & label{
+    background-color: #111;
+    width:100%;
+    border-bottom:solid 1px #ddd;
+    
+    & input{
+      width:85%;
+      border:none;
+    }
+  }
+  & textarea{
+    border:none;
+    grid-area: content;
+    padding:2% 2%;
+    outline: none;
+    font-weight: 400 !important;
+    background-color: #111;
+    color: #ddd;
+    height:100%;
+    resize: none;
+  }
+}

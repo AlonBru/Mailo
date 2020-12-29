@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="mail_unread.svg"
+   width="147.03288mm"
+   height="147.03239mm"
+   viewBox="0 0 147.03288 147.03239"
+   version="1.1"
+   id="svg8">
+  <sodipodi:namedview
+     inkscape:current-layer="svg8"
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:cy="226.40682"
+     inkscape:cx="957.38555"
+     inkscape:zoom="0.19749404"
+     showgrid="false"
+     id="namedview1451"
+     inkscape:window-height="480"
+     inkscape:window-width="874"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 73.376398,3.3e-5 A 73.516373,73.516373 0 0 0 0,73.516476 73.516373,73.516373 0 0 0 73.516442,147.0324 73.516373,73.516373 0 0 0 147.03289,73.516476 73.516373,73.516373 0 0 0 73.516442,3.3e-5 a 73.516373,73.516373 0 0 0 -0.140044,0 z M 34.080606,50.051246 H 114.8426 c 4.432,0 8.00003,3.56803 8.00003,8.00002 v 39.24567 c 0,4.432004 -3.56803,8.000034 -8.00003,8.000034 H 34.080606 c -4.431999,0 -8.000029,-3.56803 -8.000029,-8.000034 v -39.24567 c 0,-4.43199 3.56803,-8.00002 8.000029,-8.00002 z m 4.416785,4.72477 c -5.459154,0 -7.125148,3.53644 -7.125148,7.12463 0,3.58819 38.050909,32.46314 38.050909,32.46314 1.50146,1.28095 3.217162,2.09341 5.038453,2.09341 1.821288,0 3.642365,-0.69785 5.037933,-2.09341 0,0 38.089722,-28.72096 38.051422,-32.46314 -0.0383,-3.74218 -3.17789,-7.12463 -7.12514,-7.12463 z"
+     style="fill:#999999;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+     id="circle846" />
+</svg>
