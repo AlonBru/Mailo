@@ -9,12 +9,12 @@
   color:#fff;
   flex-direction: row;
   height:5em;
-  padding: 0 2% ;
+  padding: 0 1% ;
   display:grid;
   grid-template-areas:
   "icon subject subject buttons"
   "icon from    date    buttons" ;
-  grid-template-columns:3.5em 1fr .5fr 6em ;
+  grid-template-columns:3.7em 1fr .45fr 6em ;
   grid-template-rows: 50% 50%;
   font-weight: 300;
   overflow: hidden;

@@ -4,6 +4,13 @@ import {NavLink} from 'react-router-dom'
 function Nav() {
   return (
     <nav >
+      <NavLink to='/compose'
+        activeClassName="active"
+      >
+        <span>
+        Compose Mail
+        </span>
+      </NavLink>
       <NavLink to='/all'
         activeClassName="active"
       >
@@ -25,13 +32,7 @@ function Nav() {
           Drafts
         </span>
       </NavLink>
-      <NavLink to='/compose'
-        activeClassName="active"
-      >
-        <span>
-        Compose Mail
-        </span>
-      </NavLink>
+      
     </nav>
   )
 

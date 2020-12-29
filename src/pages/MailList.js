@@ -41,7 +41,6 @@ function MailList() {
     <span>
       you have {unread.length} unread messages
     </span>
-<button>GO</button>
     <input className='search'
       value={search}
       placeholder="Search"
