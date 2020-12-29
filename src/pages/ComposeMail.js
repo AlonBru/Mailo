@@ -142,6 +142,7 @@ function ComposeMail() {
       placeholder='Subject' />
 
       <textarea name='content'
+      placeholder="add your message"
       value={content}
       rows="10"
       onChange={change}
