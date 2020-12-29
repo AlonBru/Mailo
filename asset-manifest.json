@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Mailo/static/css/main.16bef0e7.chunk.css",
-    "main.js": "/Mailo/static/js/main.3e6be092.chunk.js",
-    "main.js.map": "/Mailo/static/js/main.3e6be092.chunk.js.map",
+    "main.css": "/Mailo/static/css/main.abc6f561.chunk.css",
+    "main.js": "/Mailo/static/js/main.2683eca6.chunk.js",
+    "main.js.map": "/Mailo/static/js/main.2683eca6.chunk.js.map",
     "runtime-main.js": "/Mailo/static/js/runtime-main.04d0a002.js",
     "runtime-main.js.map": "/Mailo/static/js/runtime-main.04d0a002.js.map",
     "static/js/2.361b66af.chunk.js": "/Mailo/static/js/2.361b66af.chunk.js",
@@ -12,9 +12,9 @@
     "index.html": "/Mailo/index.html",
     "service-worker.js": "/Mailo/service-worker.js",
     "service-worker.js.map": "/Mailo/service-worker.js.map",
-    "static/css/main.16bef0e7.chunk.css.map": "/Mailo/static/css/main.16bef0e7.chunk.css.map",
+    "static/css/main.abc6f561.chunk.css.map": "/Mailo/static/css/main.abc6f561.chunk.css.map",
     "static/js/2.361b66af.chunk.js.LICENSE.txt": "/Mailo/static/js/2.361b66af.chunk.js.LICENSE.txt",
-    "static/media/noMail.eb64091a.svg": "/Mailo/static/media/noMail.eb64091a.svg",
+    "static/media/noMail.6264aca0.svg": "/Mailo/static/media/noMail.6264aca0.svg",
     "static/media/read.ea26530f.svg": "/Mailo/static/media/read.ea26530f.svg",
     "static/media/reply.a24c7ecf.svg": "/Mailo/static/media/reply.a24c7ecf.svg",
     "static/media/unread.9e008a72.svg": "/Mailo/static/media/unread.9e008a72.svg"
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.04d0a002.js",
     "static/js/2.361b66af.chunk.js",
-    "static/css/main.16bef0e7.chunk.css",
-    "static/js/main.3e6be092.chunk.js"
+    "static/css/main.abc6f561.chunk.css",
+    "static/js/main.2683eca6.chunk.js"
   ]
 }
